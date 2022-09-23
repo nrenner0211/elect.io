@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap');
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+:root {
+  --primary: #832161;
+  --secondary: #7D7ABC;
+  --tertiary: #6457A6;
+  --light: #F6F4F3;
+  --dark: #070707;
+  --darker: #111111;
+  --error: #EF767A;
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  color: var(--dark);
+  background-color: var(--light);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: var(--tertiary);
+  transition: .3s;
+}
+
+header a {
+  color: var(--light);
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  background-color: var(--secondary);
+}
+
+button {
+	background: var(--secondary);
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2vh;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 15px 20px;	
+}
+
+button:hover {
+  background-color: var(--tertiary);
+  transition: .3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: .50rem;
+  margin: .25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: var(--tertiary);
+  transition: .5s;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+  border-radius: 5px;
+	padding: 5px;
+}
+
+.center {
+  display:flex;
+  align-items: center;
+  padding: 10vh;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.screenshot {
+  margin: auto;
+  border: solid 2px var(--secondary);
+  border-radius: 5vh;
+}
+
+.screenshot:hover {
+  border: solid 2px var(--tertiary);
+  transition: .2s;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.subtitle {
+  color: #c9cfcb;
+}
+
+.transition {
+  font-size: 2vh;
+}
+
+.transition:hover {
+  background-color: var(--dark);
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+.favicon {
+  cursor: pointer;
+  padding: 2vh 0vh 0vh 2vh;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.my-5 {
+  margin-top: var(--spacing-five);
+  margin-bottom: var(--spacing-five);
+}
+
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+.px-2 {
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+}
+
+.py-1 {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
+.py-2 {
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+.card {
+  padding: 3vh;
+  width: 50vh;
+}
+
+.cardTitle {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+.img-thumbnail {
+  width: auto;
+  height: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.intro {
+  font-size: 7vh;
+  padding: 30px 30px 15px 30px;
+  border-bottom: solid 2px var(--light);
+  margin: 100px;
+  width: 40vh;
+  cursor: pointer;
+}
+
+.intro:hover {
+  color: var(--tertiary);
+  border-bottom: solid 2px var(--tertiary);
+  transition: .5s;
+}
+
+.isRounded {
+  border-radius: 50%;
+}
+
+.navActive {
+  color: var(--tertiary);
+}
+
