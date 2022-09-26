@@ -2,7 +2,13 @@
 
 ## About
 
-This is our third and final group project!
+This is our third and final group project! Inspired by lack of information around elections, especially geared towards young people. User Story:
+
+`AS someone wanting to vote,`
+
+`I WANT a convenient, non-partisan source of local election information`
+
+`SO THAT I can find out where I need to go to vote`
 
 ## Table of Contents
 
@@ -10,6 +16,7 @@ This is our third and final group project!
   - [About](#about)
   - [Table of Contents](#table-of-contents)
   - [Links](#links)
+  - [Sources](#sources)
   - [Contributors](#contributors)
 
 ## Links
@@ -17,6 +24,10 @@ This is our third and final group project!
 [Repository](https://github.com/nrenner0211/project-3)
 
 [Deployed](Coming soon!)
+
+## Sources
+
+Jumbotron made with images from [Unsplash](https://unsplash.com/)
 
 ## Contributors
 
