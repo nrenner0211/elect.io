@@ -1,31 +1,64 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 
 // components
 import Contact from "./components/Contact";
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 
 // pages
+import About from './pages/About';
 import Home from './pages/Home';
+import Login from './pages/Login';
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  }
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache()
+})
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Nav></Nav>
+    <ApolloProvider client={client}>
+      <Router>
+        <div>
+          <Nav></Nav>
+          <Hero></Hero>
 
-        <div className="container">
-          <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/login' element={<Login />} />
+            </Routes>
+
+        
+          <Footer></Footer>
         </div>
-      
-        <Footer></Footer>
-      </div>
-    </Router>
+      </Router>
+    </ApolloProvider>
   );
 }
 

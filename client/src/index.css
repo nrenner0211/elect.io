@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nanum+Gothic&display=swap');
 
 main {
 	margin: 0 auto;
@@ -6,12 +6,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #832161;
-  --secondary: #7D7ABC;
-  --tertiary: #6457A6;
-  --light: #F6F4F3;
-  --dark: #070707;
-  --darker: #111111;
+  --secondary: #DD7596;
+  --tertiary: #CF1259;
+  --light: #FAF6F6;
+  --aqua: #CBF7ED;
+  --electricBlue: #004FFF;
+  --darker: #001427;
+  --onyx: #051014;
   --error: #EF767A;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -26,19 +27,17 @@ main {
 html,
 body {
   min-height: 100%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  color: var(--dark);
+  color: var(--onyx);
   background-color: var(--light);
-
 }
 
 h1,
@@ -81,21 +80,6 @@ p {
   font-size: 1.3rem;
 }
 
-a {
-  color: var(--secondary);
-  text-decoration: none;
-  font-size: 1.4rem;
-}
-
-a:hover {
-  color: var(--tertiary);
-  transition: .3s;
-}
-
-header a {
-  color: var(--light);
-}
-
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -106,9 +90,6 @@ button {
   cursor: pointer;
   margin: 10px;
   background-color: var(--secondary);
-}
-
-button {
 	background: var(--secondary);
 	border: 0;
 	border-radius: 10px;
@@ -137,7 +118,7 @@ input {
   font-size: 1rem;
   padding: .50rem;
   margin: .25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--onyx);
   outline: none;
   border-radius: 5px;
   transition: box-shadow 0.2s;
@@ -148,14 +129,39 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 li {
   list-style: none;
 }
 
+a {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: var(--secondary);
+  transition: .3s;
+}
+
+nav a {
+  padding: 10px;
+  color: var(--aqua);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
 nav a:hover {
   text-decoration: none;
-  color: var(--tertiary);
-  transition: .5s;
+  color: var(--electricBlue);
+  transition: .3s;
 }
 
 nav  li {
@@ -168,6 +174,10 @@ textarea {
 	border: 3px solid #cccccc;
   border-radius: 5px;
 	padding: 5px;
+}
+
+.App-logo {
+  height: 4vmin;
 }
 
 .center {
@@ -186,6 +196,14 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.hero {
+  background-position: center;
+  height: 80%;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 4px solid var(--darker);
 }
 
 .screenshot {
@@ -207,15 +225,15 @@ textarea {
   color: #c9cfcb;
 }
 
-.transition {
+/* .transition {
   font-size: 2vh;
 }
 
 .transition:hover {
-  background-color: var(--dark);
+  background-color: var(--onyx);
   transform: scale(1.5);
   transition: 1s;
-}
+} */
 
 .favicon {
   cursor: pointer;
@@ -293,16 +311,16 @@ textarea {
 .intro {
   font-size: 7vh;
   padding: 30px 30px 15px 30px;
-  border-bottom: solid 2px var(--light);
+  border-bottom: solid 2px var(--onyx);
   margin: 100px;
   width: 40vh;
   cursor: pointer;
 }
 
 .intro:hover {
-  color: var(--tertiary);
-  border-bottom: solid 2px var(--tertiary);
-  transition: .5s;
+  color: var(--electricBlue);
+  border-bottom: solid 2px var(--electricBlue);
+  transition: .3s;
 }
 
 .isRounded {
@@ -312,4 +330,15 @@ textarea {
 .navActive {
   color: var(--tertiary);
 }
+
+.navbar{
+  background-color: var(--darker);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
 
