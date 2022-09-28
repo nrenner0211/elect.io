@@ -32,6 +32,11 @@ function Nav() {
                         </Link>
                     </li>
                     <li className='mx-2'>
+                        <Link to='/Contact'>
+                            
+                        </Link>
+                    </li>
+                    <li className='mx-2'>
                         <a href="#footer">
                             More
                         </a>
