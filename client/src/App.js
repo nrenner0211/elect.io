@@ -9,12 +9,13 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 // components
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 
 // pages
+import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './pages/Home';
 import Login from './pages/Login';
