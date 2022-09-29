@@ -1,5 +1,4 @@
 import React from 'react';
-import Contact from '../Contact';
 
 
 
@@ -9,7 +8,7 @@ function Footer () {
             <h1 id='footer' className='intro'>Footer</h1>
             
             <div className='card'>
-                <Contact></Contact>
+                
             </div>
 
         </section>

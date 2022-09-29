@@ -15,9 +15,16 @@ This is our third and final group project! Inspired by lack of information aroun
 - [project-3](#project-3)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
+  - [devNotes](#devnotes)
   - [Links](#links)
   - [Sources](#sources)
   - [Contributors](#contributors)
+
+## devNotes
+
+In the root of the project, run `npm run install` and `npm run develop` to get started!
+
+[Google Civic Information API Docs](https://developers.google.com/civic-information/docs/v2)
 
 ## Links
 
