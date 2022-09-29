@@ -8,7 +8,8 @@ const Home = () => {
                 {/* <input id='input' type='search' placeholder='' */}
             </div>
         </section>
-    )
+
+)
 }
 
 export default Home;
