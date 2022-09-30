@@ -1,26 +1,27 @@
 import React, { useState } from 'react';
-import { useMutation } from '@apollo/client';
 import { Link } from 'react-router-dom';
-import { LOGIN } from '../utils/mutations';
+import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
+import { ADD_USER } from '../utils/mutations';
 
-function Login(props) {
+function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error }] = useMutation(LOGIN);
+  const [addUser] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
+    
     event.preventDefault();
-    try {
-        
-      const mutationResponse = await login({
-        variables: { email: formState.email, password: formState.password },
-      });
-      const token = mutationResponse.data.login.token;
-      Auth.login(token);
-      
-    } catch (e) {
-      console.log(e);
-    }
+    console.log(formState.email)
+    const mutationResponse = await addUser({
+      variables: {
+        email: formState.email,
+        password: formState.password,
+        username: formState.username,
+      },
+    });
+    
+    const token = mutationResponse.data.addUser.token;
+    Auth.login(token);
   };
 
   const handleChange = (event) => {
@@ -33,14 +34,25 @@ function Login(props) {
 
   return (
     <div className="container my-1">
-      <Link to="/signup">← Go to Signup</Link>
+      <Link to="/login">← Go to Login</Link>
 
-      <h2>Login</h2>
+      <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email"></label>
+          <label htmlFor="username">Username:</label>
           <input
-            placeholder="Email"
+            placeholder="Username"
+            name="username"
+            type="username"
+            id="username"
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="flex-row space-between my-2">
+          <label htmlFor="email">Email:</label>
+          <input
+            placeholder="youremail@test.com"
             name="email"
             type="email"
             id="email"
@@ -48,20 +60,15 @@ function Login(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <label htmlFor="pwd"></label>
+          <label htmlFor="pwd">Password:</label>
           <input
-            placeholder="Password"
+            placeholder="******"
             name="password"
             type="password"
             id="pwd"
             onChange={handleChange}
           />
         </div>
-        {error ? (
-          <div>
-            <p className="error-text">Try again! Wrong credentials.</p>
-          </div>
-        ) : null}
         <div className="flex-row flex-end">
           <button type="submit">Submit</button>
         </div>
@@ -70,4 +77,4 @@ function Login(props) {
   );
 }
 
-export default Login;
+export default Signup;
