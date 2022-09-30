@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc80d023.css",
-    "main.js": "/static/js/main.12633e15.js",
+    "main.css": "/static/css/main.a85213c0.css",
+    "main.js": "/static/js/main.68fe3635.js",
     "static/js/787.f480428d.chunk.js": "/static/js/787.f480428d.chunk.js",
+    "static/media/electio-hero.png": "/static/media/electio-hero.bb88f0ef5b3bbee8b62c.png",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "static/media/ballot-favicon.ico": "/static/media/ballot-favicon.39dd03f0a7da607a05c8.ico",
-    "main.dc80d023.css.map": "/static/css/main.dc80d023.css.map",
-    "main.12633e15.js.map": "/static/js/main.12633e15.js.map",
+    "main.a85213c0.css.map": "/static/css/main.a85213c0.css.map",
+    "main.68fe3635.js.map": "/static/js/main.68fe3635.js.map",
     "787.f480428d.chunk.js.map": "/static/js/787.f480428d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc80d023.css",
-    "static/js/main.12633e15.js"
+    "static/css/main.a85213c0.css",
+    "static/js/main.68fe3635.js"
   ]
 }
