@@ -5,7 +5,8 @@ const Home = () => {
         <section className="my-5">
             <h1 id='home' className="intro">Home</h1>
             <div className='card'>
-                {/* <input id='input' type='search' placeholder='' */}
+                <input type="text" id="search" class="inputValue" placeholder="Search"></input>
+                <button type="submit" id="submit" class="btn button btn-info">Search</button>
             </div>
         </section>
 
