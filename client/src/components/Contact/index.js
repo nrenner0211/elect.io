@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -35,8 +35,8 @@ function Contact() {
   return (
     <section>
 
-    <h1 id="contact" className='intro'>Contact</h1>
-    <div className='center'>
+    {/* <h1 id="contact" className='intro'>Contact</h1> */}
+
 
         <form id="contact-form" onSubmit={handleSubmit}>
 
@@ -61,7 +61,7 @@ function Contact() {
             <button data-testid="button" type="submit">Submit</button>
         </form>
 
-    </div>
+
 
     </section>
   );

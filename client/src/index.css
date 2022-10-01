@@ -176,10 +176,17 @@ textarea {
 	padding: 5px;
 }
 
-.App-logo {
-  height: 4vmin;
+.card {
+  padding: 3vh;
+  width: 50vh;
 }
 
+.cardTitle {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  font-size: 3vh;
+  cursor: pointer;
+}
 .center {
   display:flex;
   align-items: center;
@@ -193,9 +200,30 @@ textarea {
   margin-right: auto;
 }
 
+.favicon {
+  cursor: pointer;
+  padding: 2vh 0vh 0vh 2vh;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60px;
+  grid-gap: 20px;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
@@ -204,44 +232,6 @@ textarea {
   width: 100%;
   cursor: pointer;
   border-bottom: 4px solid var(--darker);
-}
-
-.screenshot {
-  margin: auto;
-  border: solid 2px var(--secondary);
-  border-radius: 5vh;
-}
-
-.screenshot:hover {
-  border: solid 2px var(--tertiary);
-  transition: .2s;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.subtitle {
-  color: #c9cfcb;
-}
-
-/* .transition {
-  font-size: 2vh;
-}
-
-.transition:hover {
-  background-color: var(--onyx);
-  transform: scale(1.5);
-  transition: 1s;
-} */
-
-.favicon {
-  cursor: pointer;
-  padding: 2vh 0vh 0vh 2vh;
-}
-
-.flex-end {
-  justify-content: flex-end;
 }
 
 .mx-1 {
@@ -289,17 +279,36 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  padding: 3vh;
-  width: 50vh;
+.screenshot {
+  margin: auto;
+  border: solid 2px var(--secondary);
+  border-radius: 5vh;
 }
 
-.cardTitle {
-  font-family: 'Nunito', sans-serif;
-  padding: 10px;
-  font-size: 3vh;
-  cursor: pointer;
+.screenshot:hover {
+  border: solid 2px var(--tertiary);
+  transition: .2s;
 }
+
+.space-between {
+  justify-content: space-between;
+}
+
+.subtitle {
+  color: #c9cfcb;
+}
+
+/* .transition {
+  font-size: 2vh;
+}
+
+.transition:hover {
+  background-color: var(--onyx);
+  transform: scale(1.5);
+  transition: 1s;
+} */
+
+
 
 .img-thumbnail {
   width: auto;
