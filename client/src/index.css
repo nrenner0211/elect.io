@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nanum+Gothic&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nanum+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 main {
 	margin: 0 auto;
@@ -27,7 +28,7 @@ main {
 html,
 body {
   min-height: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -202,7 +203,6 @@ textarea {
   background-position: center;
   height: 80%;
   width: 100%;
-  cursor: pointer;
   border-bottom: 4px solid var(--darker);
 }
 
@@ -312,9 +312,20 @@ textarea {
   font-size: 7vh;
   padding: 30px 30px 15px 30px;
   border-bottom: solid 2px var(--onyx);
-  margin: 100px;
-  width: 40vh;
+  margin: 0 auto 100px auto;
+  width: 50%;
   cursor: pointer;
+  text-align: center;
+}
+
+.body-text {
+  margin: 0;
+}
+
+.border-bg {
+  display: flex;
+  top: 20%;
+  background-color: #CF1259;
 }
 
 .intro:hover {
