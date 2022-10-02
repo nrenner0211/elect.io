@@ -23,7 +23,9 @@ function Nav() {
                     </li>
                     <li className='mx-2'>
                         <Link to='/About'>
-                            About
+                            <a href='#about'>
+                                About
+                            </a>
                         </Link>
                     </li>
                     <li className='mx-2'>
@@ -34,11 +36,6 @@ function Nav() {
                     <li className='mx-2'>
                         <Link to='/Signup'>
                             Signup
-                        </Link>
-                    </li>
-                    <li className='mx-2'>
-                        <Link to='/Contact'>
-                            Contact
                         </Link>
                     </li>
                     <li className='mx-2'>
