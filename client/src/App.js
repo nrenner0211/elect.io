@@ -14,11 +14,13 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 
+
 // pages
 import About from './pages/About';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
