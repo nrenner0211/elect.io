@@ -1,7 +1,7 @@
 import React from 'react';
 import Contact from '../Contact';
 import { experimentalStyled as styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
@@ -17,26 +17,32 @@ function Footer () {
 
     return(
 
+        <section>
+            <h1 id='footer' className='intro'>More</h1>
+            <section className='flex-column center'>
+                <div className='card'>
+                    <div className='cardTitle'>
 
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
+                    </div>
+                </div>
+            </section>
+        </section>
 
-          <Item>
-            <h1 className='intro'>Collaborators</h1>
-          </Item>
+    // <Container maxWidth="xlg">
+    //   <Grid container spacing={2}>
+    //     <Grid item xs={12}>
 
-        </Grid>
+    //       <Item>
+    //         <h1 id='footer' className='intro'>More</h1>
+    //       </Item>
 
-        <Grid item xs={4}>
+    //       <Item>
+    //         <Contact></Contact>
+    //       </Item>
 
-          <Item>
-            <Contact></Contact>
-          </Item>
-
-        </Grid>
-      </Grid>
-    </Box>
+    //     </Grid>
+    //   </Grid>
+    // </Container>
 
     )
 }
