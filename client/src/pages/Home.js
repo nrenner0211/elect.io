@@ -1,11 +1,14 @@
 import React from "react";
 import { Container } from "@mui/material";
-import Card from '@mui/material/Card';
+import Paper from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import TextField from '@mui/material/TextField';
+
+// API
+import { RepList } from '../components/RepList';
 
 const Home = () => {
     return (
@@ -14,21 +17,15 @@ const Home = () => {
         <Container maxWidth="sm">
             <h1 id='home' className="intro">Home</h1>
 
-            <Card sx={{ minWidth: 275 }}>
+            <Paper variant="outlined">
 
                 <CardContent>
-                    <p>Enter Address</p>
+                    <p>View Representatives by Address</p>
                     <TextField id="outlined-basic" label="Address" variant="outlined" />
                 </CardContent>
-                
-            </Card>
-
-            <Card sx={{ minWidth: 275 }}>
 
                 <CardContent>
-                    <ul>
-                        <li id="result"></li>
-                    </ul>
+                    <RepList></RepList>
                 </CardContent>
                 
                 {/* link to civic info api */}
@@ -38,7 +35,7 @@ const Home = () => {
                     </Button>
                 </CardActions>
                 
-            </Card>
+            </Paper>
 
         </Container>
     )
