@@ -80,7 +80,6 @@ p {
   font-size: 1.3rem;
 }
 
-
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -91,13 +90,9 @@ button {
   cursor: pointer;
   margin: 10px;
 	border: 0;
-	border-radius: 10px;
-	color: #fff;
+	border-radius: 10rem;
 	cursor: pointer;
-	font-size: 2vh;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 15px 20px;	
+	font-size: 2rem;
 }
 
 button:hover {
@@ -189,7 +184,8 @@ textarea {
 .center {
   display:flex;
   align-items: center;
-  padding: 10vh;
+  text-align: center;
+  padding: 5vh;
 }
 
 .container {
@@ -211,18 +207,6 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 60px;
-  grid-gap: 20px;
-}
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero {
@@ -278,24 +262,15 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.screenshot {
-  margin: auto;
-  border: solid 2px var(--secondary);
-  border-radius: 5vh;
-}
-
-.screenshot:hover {
-  border: solid 2px var(--tertiary);
-  transition: .2s;
-}
-
 .space-between {
   justify-content: space-between;
 }
 
-.subtitle {
-  color: #c9cfcb;
-}
+/* .subtitle {
+  color: var(--darker);
+  font-size: 2em;
+  font-weight: 550;
+} */
 
 /* .transition {
   font-size: 2vh;
@@ -307,8 +282,6 @@ textarea {
   transition: 1s;
 } */
 
-
-
 .img-thumbnail {
   width: auto;
   height: 300px;
@@ -317,11 +290,12 @@ textarea {
 }
 
 .intro {
-  font-size: 7vh;
+  font-size: 6vh;
   padding: 30px 30px 15px 30px;
+  color: var(--onyx);
   border-bottom: solid 2px var(--onyx);
   margin: 100px;
-  width: 40vh;
+  width: 45vh;
   cursor: pointer;
 }
 
@@ -333,10 +307,6 @@ textarea {
 
 .isRounded {
   border-radius: 50%;
-}
-
-.navActive {
-  color: var(--tertiary);
 }
 
 .navbar{
