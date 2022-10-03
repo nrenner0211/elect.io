@@ -28,31 +28,24 @@ const Home = () => {
                     <TextField className='userInput' id="outlined-basic" label="Address" variant="outlined" />
 
         
-                <Box
-                    sx={{
+                <Box sx={{
                         display: 'flex',
                         flexWrap: 'wrap',
                         '& > :not(style)': {
-                        m: 2,
+                        m: '2rem',
+                        p: '5rem'
                         },
                     }}
                 >
-                
                     <Card>
-
                         <RepList></RepList>
-
                     </Card>
 
                     <Card>
-
                         <VoterInfo></VoterInfo>
-
                     </Card>
-                
                 </Box>
             </Paper>
-
         </Container>
     )
 }
