@@ -41,8 +41,6 @@ This is our third and final group project! Inspired by lack of information aroun
 
 In the root of the project, run `npm run install` and `npm run develop` to get started!
 
-[Google Civic Information API Docs](https://developers.google.com/civic-information/docs/v2)
-
 ## Links
 
 [Repository](https://github.com/nrenner0211/project-3)
@@ -50,6 +48,8 @@ In the root of the project, run `npm run install` and `npm run develop` to get s
 [Deployed](Coming soon!)
 
 ## Sources
+
+- [Google Civic Information API Docs](https://developers.google.com/civic-information/docs/v2)
 
 - [MUI](https://mui.com/) used as component library
 

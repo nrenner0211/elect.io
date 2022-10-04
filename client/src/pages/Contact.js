@@ -37,7 +37,7 @@ function Contact() {
     
       <Paper elevation={6}>
         <form id="contact-form" onSubmit={handleSubmit}>
-          <h3>Contact Us</h3>
+          <div className='intro'>Contact Us</div>
 
             <div>
             <label htmlFor="name"></label>

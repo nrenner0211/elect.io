@@ -13,6 +13,7 @@ import { setContext } from '@apollo/client/link/context';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Paper from '@mui/material/Paper';
 
 
 // pages
@@ -48,7 +49,15 @@ function App() {
         <div>
           <Nav></Nav>
           <Hero></Hero>
-
+          <Paper elevation={0} sx={{
+                        background: '#eefcff',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        '& > :not(style)': {
+                        m: '1rem',
+                        p: '1rem'
+                        },
+                    }}>
 
             <Routes>
               <Route path='/' element={<Home />} />
@@ -59,6 +68,7 @@ function App() {
 
         
           <Footer></Footer>
+          </Paper>
         </div>
       </Router>
     </ApolloProvider>
