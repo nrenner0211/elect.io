@@ -7,7 +7,7 @@ export const RepList = () => {
 
     useEffect(() => {
         let isMounted = true
-        const fetchData = async () => {
+        const fetchdata = async () => {
             try {
                 const responses = await Promise.all(watchList.map((address) => {
                     return civicInfo.get('/representatives', {
@@ -17,24 +17,49 @@ export const RepList = () => {
                     })
                 }))
                 
-                console.log(responses)
-                // responses.map((response) => {
-                //     {
-                //         data: response.data,
-                //         address: response.config.params.address
-                //     }
-                // })
+                // console.log(responses)
+                const data = responses.map((response) => {
+                return  {
+                        data: response.data.offices,
+                        officials: response.data.officials
+                    }
+                })
+                // console.log(data)
                 if (isMounted) {
-                    setAddress(responses)
+                    setAddress(data)
                 }
                 
             } catch (err) {
 
             }
         }
-        fetchData()
+        fetchdata()
 
         return () => (isMounted = false)
     }, [])
-    return <div>repList</div>
+    return <div>
+        <table className='table'>
+            <thead style={{ color: '#004FFF'}}>
+                <tr>
+                    <th scope='col'>Name</th>
+                    <th scope='col'>Party</th>
+                    <th scope='col'>Phone</th>
+                    <th scope='col'>Website</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {address.map((data) => {
+                    return (                    
+                    <tr key={data.offices}>
+                        <th scope='row'>{data.name}</th>
+                        <td>{data.party}</td>
+                        <td>{data.phones}</td>
+                        <td>{data.urls}</td> 
+                    </tr>
+                    )
+                })}
+            </tbody>
+        </table>
+    </div>
 }
