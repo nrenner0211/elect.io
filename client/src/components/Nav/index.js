@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BsHouseDoorFill } from "react-icons/bs";
 import favicon from '../../assets/cover/ballot-favicon.ico';
 
 function Nav() {
@@ -18,7 +19,7 @@ function Nav() {
                     </li>
                     <li className="mx-2">
                         <Link to='/'>
-                            Home
+                            <BsHouseDoorFill/>
                         </Link>
                     </li>
                     <li className='mx-2'>
