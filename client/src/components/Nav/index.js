@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import favicon from '../../assets/cover/ballot-favicon.ico';
+import auth from '../../utils/auth';
 
 function Nav() {
+    const logout = event => {
+        event.preventDefault();
+        auth.logout();
+    }
 
     return (
         <header>
@@ -26,16 +31,28 @@ function Nav() {
                             About
                         </Link>
                     </li>
+
+                {auth.loggedIn() ? (
                     <li className='mx-2'>
-                        <Link to='/Login'>
-                            Log In
-                        </Link>
+                        <a href='/' onClick={logout}>
+                            Log out
+                        </a>
                     </li>
-                    <li className='mx-2'>
-                        <Link to='/Signup'>
-                            Signup
-                        </Link>
-                    </li>
+                ) : (
+                    <>
+                        <li className='mx-2'>
+                            <Link to='/Login'>
+                                Log In
+                            </Link>
+                        </li>
+                        <li className='mx-2'>
+                            <Link to='/Signup'>
+                                Signup
+                            </Link>
+                        </li>
+                    </>
+                )}
+
                     <li className='mx-2'>
                         <a href="#footer">
                             More
