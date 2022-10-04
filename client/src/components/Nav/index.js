@@ -23,9 +23,7 @@ function Nav() {
                     </li>
                     <li className='mx-2'>
                         <Link to='/About'>
-                            <a href='#about'>
-                                About
-                            </a>
+                            About
                         </Link>
                     </li>
                     <li className='mx-2'>
