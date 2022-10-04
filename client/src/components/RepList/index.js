@@ -2,18 +2,39 @@ import { useState, useEffect } from 'react';
 import civicInfo from '../../api/civicInfo';
 
 export const RepList = () => {
-    const address = useState('131riverviewavewheelingwv')
+    const [address, setAddress] = useState([])
+    const [watchList, setWatchList] = useState(['131 Riverview AVE, Wheeling WV 26003'])
 
     useEffect(() => {
+        let isMounted = true
         const fetchData = async () => {
             try {
-                const response = await civicInfo.get('/representatives?key=AIzaSyB6Ob6qiK4MHLPTscdDbTRfMy3nIdoagOA&address=131riverviewavewheeligwv26003')
-                console.log(response)
+                const responses = await Promise.all(watchList.map((address) => {
+                    return civicInfo.get('/representatives', {
+                        params: {
+                            address: address
+                        }
+                    })
+                }))
+                
+                console.log(responses)
+                // responses.map((response) => {
+                //     {
+                //         data: response.data,
+                //         address: response.config.params.address
+                //     }
+                // })
+                if (isMounted) {
+                    setAddress(responses)
+                }
+                
             } catch (err) {
 
             }
         }
         fetchData()
+
+        return () => (isMounted = false)
     }, [])
     return <div>repList</div>
 }

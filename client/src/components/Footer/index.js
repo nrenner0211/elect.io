@@ -1,9 +1,10 @@
 import React from 'react';
-import Contact from '../Contact';
+import { Link } from 'react-router-dom';
 import { experimentalStyled as styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
+
+// components
+
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,26 +18,22 @@ function Footer () {
 
     return(
 
-
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-
-          <Item>
-            <h1 className='intro'>Collaborators</h1>
-          </Item>
-
-        </Grid>
-
-        <Grid item xs={4}>
-
-          <Item>
-            <Contact></Contact>
-          </Item>
-
-        </Grid>
-      </Grid>
-    </Box>
+        <section>
+            <h1 id='footer' className='intro'>More</h1>
+            <section className='center'>
+                <ul className='flex-column'> 
+                    <li>
+                        <Link to="/signup">Go to Signup</Link>
+                    </li>
+                    <li>
+                        <Link to="/login">Go to Login</Link>
+                    </li>
+                    <li>
+                        <Link to="/Contact">Contact Us</Link>
+                    </li>
+                </ul>
+            </section>
+        </section>
 
     )
 }

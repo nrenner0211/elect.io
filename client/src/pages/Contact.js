@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Paper from '@mui/material/Paper';
 
 function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -33,10 +34,10 @@ function Contact() {
   };
 
   return (
-    <section>
-
-        <h1 className='intro'>Contact</h1>
+    
+      <Paper elevation={6}>
         <form id="contact-form" onSubmit={handleSubmit}>
+          <div className='intro'>Contact Us</div>
 
             <div>
             <label htmlFor="name"></label>
@@ -61,8 +62,7 @@ function Contact() {
 
             <button data-testid="button" type="submit">Submit</button>
         </form>
-
-    </section>
+    </Paper>
   );
 }
 

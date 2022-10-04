@@ -1,7 +1,6 @@
 import React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import Paper from '@mui/material/Card';
 import Container from '@mui/material/Container';
 
 const About = () => {
@@ -9,13 +8,25 @@ const About = () => {
 
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
 
                 <h1 id='about' className='intro'>About</h1>
 
-                <Card sx={{ minWidth: 275 }}>
-                    Created as a team project, elect.io aims to provide election information based on a user's location. The inspiration for this project was the lack of resources pertaining to upcoming elections, especially geared towards young people.
-                </Card>
+                <Paper elevation={12} sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        '& > :not(style)': {
+                        m: '1rem',
+                        p: '1rem'
+                        },
+                    }}>
+                    <p>
+                        Created as a team project, elect.io aims to provide election information based on a user's location. The inspiration for this project was the lack of resources pertaining to upcoming elections, especially geared towards young people.
+                    </p>
+                    <p>
+                        Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a>
+                    </p>
+                </Paper>
 
             </Container>
         </React.Fragment>
