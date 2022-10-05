@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 
 // API
 import { RepList } from "../components/RepList";
-import { VoterInfo } from "../components/voterInfo";
+// import { VoterInfo } from "../components/voterInfo";
 
 const Home = () => {
     return (
@@ -39,9 +39,6 @@ const Home = () => {
                         <RepList></RepList>
                     </Paper>
 
-                    {/* <Paper elevation={6}>
-                        <VoterInfo></VoterInfo>
-                    </Paper> */}
 
                 </Box>
 
