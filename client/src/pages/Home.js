@@ -39,9 +39,9 @@ const Home = () => {
                         <RepList></RepList>
                     </Paper>
 
-                    <Paper elevation={6}>
+                    {/* <Paper elevation={6}>
                         <VoterInfo></VoterInfo>
-                    </Paper>
+                    </Paper> */}
 
                 </Box>
 

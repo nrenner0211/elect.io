@@ -8,7 +8,7 @@ main {
 :root {
   --secondary: #ADB9E3;
   --tertiary: #B744B8;
-  --light: #eefcff;
+  --light: #e2faff;
   --aqua: #bef4ff;
   --electricBlue: #004FFF;
   --darker: #001427;
@@ -146,7 +146,7 @@ a:hover {
 
 nav a {
   padding: 10px;
-  color: var(--aqua);
+  color: var(--light);
   text-decoration: none;
   font-size: 1.6rem;
 }
@@ -167,6 +167,11 @@ textarea {
 	border: 3px solid #cccccc;
   border-radius: 5px;
 	padding: 5px;
+}
+
+th {
+  font-size: 2rem;
+  padding: 5rem;
 }
 
 .center {
@@ -250,29 +255,6 @@ textarea {
 
 .space-between {
   justify-content: space-between;
-}
-
-/* .subtitle {
-  color: var(--darker);
-  font-size: 2em;
-  font-weight: 550;
-} */
-
-/* .transition {
-  font-size: 2vh;
-}
-
-.transition:hover {
-  background-color: var(--onyx);
-  transform: scale(1.5);
-  transition: 1s;
-} */
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
 }
 
 .intro {

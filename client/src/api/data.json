@@ -1,0 +1,1393 @@
+{
+    "normalizedInput": {
+    "line1": "131 Riverview Avenue",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    },
+    "kind": "civicinfo#representativeInfoResponse",
+    "divisions": {
+    "ocd-division/country:us/state:wv": {
+    "name": "West Virginia",
+    "officeIndices": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12
+    ]
+    },
+    "ocd-division/country:us": {
+    "name": "United States",
+    "officeIndices": [
+    0,
+    1
+    ]
+    },
+    "ocd-division/country:us/state:wv/place:wheeling": {
+    "name": "Wheeling city"
+    },
+    "ocd-division/country:us/state:wv/county:ohio": {
+    "name": "Ohio County",
+    "officeIndices": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+    ]
+    },
+    "ocd-division/country:us/state:wv/sldu:2": {
+    "name": "West Virginia State Senate district 2",
+    "officeIndices": [
+    10
+    ]
+    },
+    "ocd-division/country:us/state:wv/cd:1": {
+    "name": "West Virginia's 1st congressional district",
+    "officeIndices": [
+    3
+    ]
+    },
+    "ocd-division/country:us/state:wv/sldl:4": {
+    "name": "West Virginia State House district 4",
+    "officeIndices": [
+    11
+    ]
+    },
+    "ocd-division/country:us/state:wv/county:ohio/school_district:ohio_county_schools": {
+    "name": "ohio county schools"
+    }
+    },
+    "offices": [
+    {
+    "name": "President of the United States",
+    "divisionId": "ocd-division/country:us",
+    "levels": [
+    "country"
+    ],
+    "roles": [
+    "headOfGovernment",
+    "headOfState"
+    ],
+    "officialIndices": [
+    0
+    ]
+    },
+    {
+    "name": "Vice President of the United States",
+    "divisionId": "ocd-division/country:us",
+    "levels": [
+    "country"
+    ],
+    "roles": [
+    "deputyHeadOfGovernment"
+    ],
+    "officialIndices": [
+    1
+    ]
+    },
+    {
+    "name": "U.S. Senator",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "country"
+    ],
+    "roles": [
+    "legislatorUpperBody"
+    ],
+    "officialIndices": [
+    2,
+    3
+    ]
+    },
+    {
+    "name": "U.S. Representative",
+    "divisionId": "ocd-division/country:us/state:wv/cd:1",
+    "levels": [
+    "country"
+    ],
+    "roles": [
+    "legislatorLowerBody"
+    ],
+    "officialIndices": [
+    4
+    ]
+    },
+    {
+    "name": "Governor of West Virginia",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "headOfGovernment"
+    ],
+    "officialIndices": [
+    5
+    ]
+    },
+    {
+    "name": "WV State Auditor",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    6
+    ]
+    },
+    {
+    "name": "WV State Commissioner of Agriculture",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    7
+    ]
+    },
+    {
+    "name": "WV Secretary of State",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    8
+    ]
+    },
+    {
+    "name": "WV State Attorney General",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    9
+    ]
+    },
+    {
+    "name": "WV State Treasurer",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    10
+    ]
+    },
+    {
+    "name": "WV State Senator",
+    "divisionId": "ocd-division/country:us/state:wv/sldu:2",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "legislatorUpperBody"
+    ],
+    "officialIndices": [
+    11,
+    12
+    ]
+    },
+    {
+    "name": "WV State Delegate",
+    "divisionId": "ocd-division/country:us/state:wv/sldl:4",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "legislatorLowerBody"
+    ],
+    "officialIndices": [
+    13,
+    14
+    ]
+    },
+    {
+    "name": "WV State Supreme Court of Appeals Justice",
+    "divisionId": "ocd-division/country:us/state:wv",
+    "levels": [
+    "administrativeArea1"
+    ],
+    "roles": [
+    "judge"
+    ],
+    "officialIndices": [
+    15,
+    16,
+    17,
+    18,
+    19
+    ]
+    },
+    {
+    "name": "Ohio County Clerk",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    20
+    ]
+    },
+    {
+    "name": "Ohio County Assessor",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    21
+    ]
+    },
+    {
+    "name": "Ohio County Prosecuting Attorney",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    22
+    ]
+    },
+    {
+    "name": "Ohio County Sheriff",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    23
+    ]
+    },
+    {
+    "name": "Ohio County Circuit Clerk",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "governmentOfficer"
+    ],
+    "officialIndices": [
+    24
+    ]
+    },
+    {
+    "name": "Ohio County Commissioner",
+    "divisionId": "ocd-division/country:us/state:wv/county:ohio",
+    "levels": [
+    "administrativeArea2"
+    ],
+    "roles": [
+    "legislatorLowerBody"
+    ],
+    "officialIndices": [
+    25,
+    26,
+    27
+    ]
+    }
+    ],
+    "officials": [
+    {
+    "name": "Joseph R. Biden",
+    "address": [
+    {
+    "line1": "1600 Pennsylvania Avenue Northwest",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20500"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(202) 456-1111"
+    ],
+    "urls": [
+    "https://www.whitehouse.gov/",
+    "https://en.wikipedia.org/wiki/Joe_Biden"
+    ],
+    "channels": [
+    {
+    "type": "Twitter",
+    "id": "potus"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "The White House 1600 Pennsylvania Avenue NW Washington, DC 20500",
+    "featureId": {
+    "cellId": "9923602325795527449",
+    "fprint": "11513381022022344111"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 126.14545494347092,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Kamala D. Harris",
+    "address": [
+    {
+    "line1": "1600 Pennsylvania Avenue Northwest",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20500"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(202) 456-1111"
+    ],
+    "urls": [
+    "https://www.whitehouse.gov/",
+    "https://en.wikipedia.org/wiki/Kamala_Harris"
+    ],
+    "channels": [
+    {
+    "type": "Twitter",
+    "id": "VP"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "The White House 1600 Pennsylvania Avenue NW Washington, DC 20500",
+    "featureId": {
+    "cellId": "9923602325795527449",
+    "fprint": "11513381022022344111"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 126.14545494347092,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Joe Manchin III",
+    "address": [
+    {
+    "line1": "306 Hart Senate Office Building",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20510"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(202) 224-3954"
+    ],
+    "urls": [
+    "https://www.manchin.senate.gov/",
+    "https://en.wikipedia.org/wiki/Joe_Manchin"
+    ],
+    "photoUrl": "http://bioguide.congress.gov/bioguide/photo/M/M001183.jpg",
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "JoeManchinIII"
+    },
+    {
+    "type": "Twitter",
+    "id": "Sen_JoeManchin"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "306 Hart Senate Office Building, Washington DC 20510",
+    "featureId": {
+    "cellId": "9923602661160726555",
+    "fprint": "13491012159388313795"
+    },
+    "featureType": "typePostalCode",
+    "positionPrecisionMeters": 500,
+    "addressUnderstood": false
+    }
+    ]
+    },
+    {
+    "name": "Shelley Moore Capito",
+    "address": [
+    {
+    "line1": "172 Russell Senate Office Building",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20510"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(202) 224-6472"
+    ],
+    "urls": [
+    "https://www.capito.senate.gov/",
+    "https://en.wikipedia.org/wiki/Shelley_Moore_Capito"
+    ],
+    "photoUrl": "http://bioguide.congress.gov/bioguide/photo/C/C001047.jpg",
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "senshelley"
+    },
+    {
+    "type": "Twitter",
+    "id": "SenCapito"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "172 Russell Senate Office Building, Washington DC 20510",
+    "featureId": {
+    "cellId": "9923602777983093035",
+    "fprint": "16754435804240149550"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 154.99767133790925,
+    "addressUnderstood": false
+    }
+    ]
+    },
+    {
+    "name": "David B. McKinley",
+    "address": [
+    {
+    "line1": "2239 Rayburn House Office Building",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20515"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(202) 225-4172"
+    ],
+    "urls": [
+    "https://mckinley.house.gov/",
+    "https://en.wikipedia.org/wiki/David_McKinley"
+    ],
+    "photoUrl": "http://bioguide.congress.gov/bioguide/photo/M/M001180.jpg",
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "RepMcKinley"
+    },
+    {
+    "type": "Twitter",
+    "id": "RepMcKinley"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "2239 Rayburn House Office Building, Washington, DC 20515-4801",
+    "featureId": {
+    "cellId": "9923602067032561107",
+    "fprint": "3004281461341646448"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 162.19669259570352,
+    "addressUnderstood": false
+    }
+    ]
+    },
+    {
+    "name": "Jim Justice",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-2000"
+    ],
+    "urls": [
+    "https://governor.wv.gov/",
+    "https://en.wikipedia.org/wiki/Jim_Justice"
+    ],
+    "photoUrl": "http://www.governor.wv.gov/images/official-portrait.jpg",
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "WVGovernor"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVGovernor"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "549332859993967488"
+    },
+    "featureType": "typeGeocodedAddress",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "John B. \"JB\" McCuskey",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-2251"
+    ],
+    "urls": [
+    "https://www.wvsao.gov/",
+    "https://en.wikipedia.org/wiki/JB_McCuskey"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvsao"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVAuditor"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Boulevard East, Building 1, Room W-100, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "17712335784259305985"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Kent Leonhardt",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "23505"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-3550"
+    ],
+    "urls": [
+    "https://agriculture.wv.gov/",
+    "https://en.wikipedia.org/wiki/Kent_Leonhardt"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "West.Virginia.Department.of.Agriculture"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVDeptofAg"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Rm E-28, Charleston, WV 23505-0170",
+    "featureId": {
+    "cellId": "9822118394059044029",
+    "fprint": "142885900838655541"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Mac Warner",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-6000"
+    ],
+    "urls": [
+    "https://sos.wv.gov/",
+    "https://en.wikipedia.org/wiki/Mac_Warner"
+    ],
+    "emails": [
+    "mwarner@wvsos.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvsos"
+    },
+    {
+    "type": "Twitter",
+    "id": "wvsosoffice"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg. 1, Suite 157-K, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "16642112816655188135"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Patrick Morrisey",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-2021"
+    ],
+    "urls": [
+    "https://ago.wv.gov/",
+    "https://en.wikipedia.org/wiki/Patrick_Morrisey"
+    ],
+    "emails": [
+    "info@wvago.us"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "agwestv"
+    },
+    {
+    "type": "Twitter",
+    "id": "WestVirginiaAG"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg. 1, Room E-26, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "16849312303780288927"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Riley Moore",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 558-5000"
+    ],
+    "urls": [
+    "https://wvtreasury.com/",
+    "https://en.wikipedia.org/wiki/Riley_Moore"
+    ],
+    "emails": [
+    "wvtreasury@wvsto.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "WVTreasury"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVTreasury"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Boulevard, Room E-145, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "2537981182786168669"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Charles H. Clements",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 455-5339"
+    ],
+    "urls": [
+    "http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Clements",
+    "https://en.wikipedia.org/wiki/Charles_H._Clements"
+    ],
+    "photoUrl": "http://www.legis.state.wv.us/images/members/2017/senate/clements_charles.jpg",
+    "emails": [
+    "charles.clements@wvsenate.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 KANAWHA BLVD E, Room 441M, Building 1, CHARLESTON WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "7351497994932304876"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Mike Maroney",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 357-7902"
+    ],
+    "urls": [
+    "http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Maroney",
+    "https://en.wikipedia.org/wiki/Mike_Maroney"
+    ],
+    "photoUrl": "http://www.legis.state.wv.us/images/members/2017/senate/maroney_mike.jpg",
+    "emails": [
+    "mike.maroney@wvsenate.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "maroneyforwvsenate"
+    },
+    {
+    "type": "Twitter",
+    "id": "DrMikeMaroney"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 KANAWHA BLVD E, Room 439M, Building 1, CHARLESTON WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "7855299107203249374"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Charlie Reynolds",
+    "party": "Republican Party",
+    "phones": [
+    "(304) 340-3151"
+    ],
+    "emails": [
+    "charlie.reynolds@wvhouse.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "Room 209E, Building 1, State Capitol Complex, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822118397594426995",
+    "fprint": "7243579991019418627"
+    },
+    "featureType": "typePostalCode",
+    "positionPrecisionMeters": 577.9169194868989,
+    "addressUnderstood": false
+    }
+    ]
+    },
+    {
+    "name": "Lisa Zukoff",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 340-3111"
+    ],
+    "urls": [
+    "http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Zukoff",
+    "https://en.wikipedia.org/wiki/Lisa_Zukoff"
+    ],
+    "emails": [
+    "lisa.zukoff@wvhouse.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "DelegateZukoff"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 KANAWHA BLVD E, Room 151R, Building 1, CHARLESTON WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "1334005225872321381"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "C. Haley Bunn",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Nonpartisan",
+    "phones": [
+    "(304) 558-4811"
+    ],
+    "urls": [
+    "http://www.courtswv.gov/supreme-court/index.html",
+    "https://en.wikipedia.org/wiki/C._Haley_Bunn"
+    ],
+    "emails": [
+    "haley.bunn@courtswv.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg 1, Rm E-301, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "12492874327617362914"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Elizabeth D. \"Beth\" Walker",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Nonpartisan",
+    "phones": [
+    "(304) 558-2602"
+    ],
+    "urls": [
+    "http://www.courtswv.gov/supreme-court/index.html",
+    "https://en.wikipedia.org/wiki/Beth_Walker_%28judge%29"
+    ],
+    "emails": [
+    "beth.walker@courtswv.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvjudiciary"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVcourts"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg 1, Rm E-302, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "11123836032712094106"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "John A. Hutchison",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Nonpartisan",
+    "phones": [
+    "(304) 558-4282"
+    ],
+    "urls": [
+    "http://www.courtswv.gov/supreme-court/index.html",
+    "https://en.wikipedia.org/wiki/John_A._Hutchison"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvjudiciary"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVcourts"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg 1, Rm E-305, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "10799650871346210960"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Tim Armstead",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Nonpartisan",
+    "phones": [
+    "(304) 558-2604"
+    ],
+    "urls": [
+    "http://www.courtswv.gov/supreme-court/index.html",
+    "https://en.wikipedia.org/wiki/Tim_Armstead"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvjudiciary"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVcourts"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg 1, Rm E-306, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "8923979515564520362"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "William R. Wooton",
+    "address": [
+    {
+    "line1": "1900 Kanawha Boulevard East",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25305"
+    }
+    ],
+    "party": "Nonpartisan",
+    "phones": [
+    "(304) 558-2606"
+    ],
+    "urls": [
+    "http://www.courtswv.gov/supreme-court/index.html"
+    ],
+    "emails": [
+    "bill.wooton@courtswv.gov"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "wvjudiciary"
+    },
+    {
+    "type": "Twitter",
+    "id": "WVcourts"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1900 Kanawha Blvd E, Bldg 1, Rm E-308, Charleston, WV 25305",
+    "featureId": {
+    "cellId": "9822119878319414197",
+    "fprint": "1244603205632415272"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Michael E. Kelly",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3656"
+    ],
+    "urls": [
+    "http://ohiocountyclerk.com/"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street, Room 205 Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836584448381",
+    "fprint": "9765987359722105401"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Tiffany Hoffman",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3626"
+    ],
+    "urls": [
+    "http://www.ohio.wvassessor.com/"
+    ],
+    "emails": [
+    "thoffman@wvassessor.com"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street, Room 215 Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836608487877",
+    "fprint": "16418999468772507851"
+    },
+    "featureType": "typeCompoundSection",
+    "positionPrecisionMeters": 0,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Scott R. Smith",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3631"
+    ],
+    "urls": [
+    "https://www.ohiocountywv.gov/government/ohio-county-prosecutor/21"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836591682727",
+    "fprint": "6603390868856508849"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 47.37012614196741,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Tom Howard",
+    "address": [
+    {
+    "line1": "51 16th Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3718"
+    ],
+    "urls": [
+    "http://www.ohcoso.com/"
+    ],
+    "emails": [
+    "tjhoward@ohcoso.com"
+    ],
+    "channels": [
+    {
+    "type": "Facebook",
+    "id": "SheriffOhioCO"
+    },
+    {
+    "type": "Twitter",
+    "id": "SheriffOhioCO"
+    }
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "51 16th Street, Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836655454839",
+    "fprint": "1527757947332464364"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 26.95484334760061,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Brenda L. Miller",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3611"
+    ],
+    "urls": [
+    "http://ohiocountywv.org/"
+    ],
+    "emails": [
+    "brenda.miller@courtswv.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836591682727",
+    "fprint": "6603390868856508849"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 47.37012614196741,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Don Nickerson",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 234-3628"
+    ],
+    "urls": [
+    "https://ohiocountywv.gov/staff/"
+    ],
+    "emails": [
+    "dnickerson@ohiocountywv.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836591682727",
+    "fprint": "6603390868856508849"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 47.37012614196741,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Randy Wharton",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Democratic Party",
+    "phones": [
+    "(304) 234-3628"
+    ],
+    "urls": [
+    "https://ohiocountywv.gov/staff/"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836591682727",
+    "fprint": "6603390868856508849"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 47.37012614196741,
+    "addressUnderstood": true
+    }
+    ]
+    },
+    {
+    "name": "Zach Abraham",
+    "address": [
+    {
+    "line1": "1500 Chapline Street",
+    "city": "Wheeling",
+    "state": "WV",
+    "zip": "26003"
+    }
+    ],
+    "party": "Republican Party",
+    "phones": [
+    "(304) 234-3628"
+    ],
+    "urls": [
+    "https://ohiocountywv.gov/staff/"
+    ],
+    "emails": [
+    "zabraham@ohiocountywv.gov"
+    ],
+    "geocodingSummaries": [
+    {
+    "queryString": "1500 Chapline Street Wheeling, WV 26003",
+    "featureId": {
+    "cellId": "9814990836591682727",
+    "fprint": "6603390868856508849"
+    },
+    "featureType": "typeCompoundBuilding",
+    "positionPrecisionMeters": 47.37012614196741,
+    "addressUnderstood": true
+    }
+    ]
+    }
+    ]
+    }
