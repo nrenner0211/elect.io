@@ -275,7 +275,7 @@ th {
   border-radius: 50%;
 }
 
-.navbar{
+.navbar {
   background-color: var(--darker);
   display: flex;
   flex-direction: row;
@@ -284,5 +284,8 @@ th {
   align-content: center;
 }
 
-
+.subtitle {
+  font-size: 1rem;
+  padding: 2rem;
+}
 
