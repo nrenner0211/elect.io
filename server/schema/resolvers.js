@@ -4,6 +4,7 @@ const {signToken} = require('../utils/auth');
 const { findByIdAndUpdate } = require('../models/User');
 
 const resolvers = {
+    //Query's for the monog DB for returning all users and a single user
     Query: {
 
         users: async () => {
@@ -21,6 +22,7 @@ const resolvers = {
         }
     },
 
+    //Mutations for the monog DB for creating new users, JWT's, and adding an address to a signed in users profile
     Mutation: {
         addUser: async(parent, args) => {
             

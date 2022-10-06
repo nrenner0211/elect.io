@@ -1,5 +1,6 @@
 const {gql} = require('apollo-server-express');
 
+//declare type definitions for graphql calls to the server
 const typeDefs = gql`
 
     type User{

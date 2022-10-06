@@ -13,7 +13,11 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+
+//start the back end apollo server
+
 const startApolloServer = async (typeDefs, resolvers) => {
+  //await server bootup
   await server.start();
   server.applyMiddleware({app});
 
@@ -21,10 +25,12 @@ const startApolloServer = async (typeDefs, resolvers) => {
     app.use(express.static(path.join(__dirname, '../client/build')));
   }
 
+  //deliver the home page as link base route
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   })
 
+  //confirm server is open
   db.once('open', () => {
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);
