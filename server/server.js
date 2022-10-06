@@ -13,8 +13,8 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// serve static assets
-// app.use('/cover'), express.static(path.join(__dirname, '../client/cover'));
+//serve static assets
+app.use('/cover'), express.static(path.join(__dirname, '../client/assets/cover'));
 
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
@@ -24,7 +24,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
     app.use(express.static(path.join(__dirname, '../client/build')));
   }
 
-  app.get('*', (req, res) => {
+  app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   })
 

@@ -33,11 +33,12 @@ export const RepList = () => {
                 //console.log(responses)
                 const repData = responses.map((response) => {
                 return  {
-                        data: response.data.offices,
                         officials: response.data.officials
                     }
                 })
+
                 //console.log(repData[0])
+
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
@@ -51,6 +52,7 @@ export const RepList = () => {
 
         return () => (isMounted = false)
     }, [watchList]) 
+
 
 return (
     <div>
@@ -80,5 +82,6 @@ return (
             </tbody>
         </table>
     </div>
+
     )
 }
