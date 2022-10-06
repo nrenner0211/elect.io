@@ -45,7 +45,7 @@ In the root of the project, run `npm run install` and `npm run develop` to get s
 
 [Repository](https://github.com/nrenner0211/project-3)
 
-[Deployed](Coming soon!)
+[Deployed](https://cryptic-temple-27245.herokuapp.com/)
 
 ## Sources
 

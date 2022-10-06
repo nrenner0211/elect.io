@@ -28,7 +28,6 @@ const Home = () => {
                         <RepList></RepList>
                     </Paper>
 
-
                 </Box>
 
         </Container>

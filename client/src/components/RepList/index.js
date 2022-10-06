@@ -37,7 +37,9 @@ export const RepList = () => {
                         officials: response.data.officials
                     }
                 })
-                console.log('repData', repData)
+
+                //console.log(repData[0])
+
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
