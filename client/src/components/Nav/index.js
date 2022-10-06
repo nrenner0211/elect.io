@@ -22,16 +22,29 @@ function Nav() {
                             </span>
                         </Link>
                     </li>
-                    <li className="mx-2">
-                        <Link to='/'>
-                            <BsHouseDoorFill/>
-                        </Link>
+                    {auth.loggedIn() ? (
+                    <li className='mx-2'>
+                        <a href='/Dashboard'>
+                            Dashboard
+                        </a>
                     </li>
+                ) : (
+                    <>
+
+                        <li className='mx-2'>
+                            <Link to='/'>
+                                <BsHouseDoorFill/>
+                            </Link>
+                        </li>
+                        
+                    </>
+                )}
                     <li className='mx-2'>
                         <Link to='/About'>
                             About
                         </Link>
                     </li>
+
 
                 {auth.loggedIn() ? (
                     <li className='mx-2'>
