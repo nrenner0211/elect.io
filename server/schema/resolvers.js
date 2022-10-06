@@ -4,6 +4,7 @@ const {signToken} = require('../utils/auth');
 const { findByIdAndUpdate } = require('../models/User');
 
 const resolvers = {
+    //Query's for the monog DB for returning all users and a single user
     Query: {
 
         users: async () => {
@@ -21,6 +22,7 @@ const resolvers = {
         }
     },
 
+    //Mutations for the monog DB for creating new users, JWT's, and adding an address to a signed in users profile
     Mutation: {
         addUser: async(parent, args) => {
             
@@ -33,7 +35,6 @@ const resolvers = {
 
         login: async(parent, {email, password}) => {
             const user = await User.findOne({email});
-            console.log(user)
             if(!user){
                 throw new AuthenticationError('Incorrect credentials!');
             }
@@ -46,6 +47,21 @@ const resolvers = {
 
             const token = signToken(user);
             return {token, user};
+        },
+         
+        addAddress: async(parent, {address}, context) => {
+            if(context.user){
+                console.log(address);
+                const updatedUser = await User.findOneAndUpdate(
+                    {_id: context.user._id},
+                    {$set: {address: address}},
+                    { new: true }
+                ).populate('address')
+
+                return updatedUser;
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
         }
     }
 }

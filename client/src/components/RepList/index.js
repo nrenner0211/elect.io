@@ -1,19 +1,21 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import civicInfo from '../../api/civicInfo';
-
-// mock data
-// const mockData = require('../../api/data.json');
+import TextField from '@mui/material/TextField';
+import auth from '../../utils/auth';
 
 
 export const RepList = () => {
+
+    let userAddress = '';
+    if(auth.loggedIn())
+    {
+        userAddress = auth.getProfile();
+        userAddress = userAddress.data.address;
+    }
+
     const [representatives, setRepresentatives] = useState([])
-    const [watchList] = useState(['131 Riverview AVE, Wheeling WV 26003'])
-
-    // MOCKDATA
-    // let representatives = mockData.officials;
-
-
+    const [watchList, setWatchList] = useState([userAddress]);
 
 
     // API CALL
@@ -29,14 +31,12 @@ export const RepList = () => {
                         }
                     })
                 }))
-                
-                // console.log(responses)
+
                 const repData = responses.map((response) => {
                 return  {
                         officials: response.data.officials
                     }
                 })
-                console.log('repData', repData)
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
@@ -51,11 +51,24 @@ export const RepList = () => {
         return () => (isMounted = false)
     }, [watchList]) 
 
-// testing data chain
-console.log('representatives', representatives)
 
-
-    return (
+return (
+    <>
+        <h4>Enter Address:</h4>
+    
+        {/* textfield component is loaded with label and such */}
+    
+        <form className="addressForm center">
+            <TextField className='userInput' id="outlined-basic" label="Address" variant="outlined"/>
+            <button className="btn" type="submit" onSubmit={(event) => {
+                event.preventDefault();
+                console.log(document.getElementById('outlined-basic').value);
+                setWatchList(document.getElementById('outlined-basic').value)
+            }}>Submit</button>
+        </form>
+    
+        <h5>Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a></h5>
+    
         <div>
             <table className='table'>
                 <thead style={{ color: '#004FFF'}}>
@@ -68,14 +81,14 @@ console.log('representatives', representatives)
                     </tr>
                 </thead>
                 <tbody>
-                    {representatives.map((items) => {
+                    {representatives.map((item) => {
                         return ( 
                             <>                  
-                            <tr key={items.name}>
-                                <th scope='row'>{items.name}</th>
-                                <td>{items.party}</td>
-                                <td>{items.phones}</td>
-                                <td>{items.urls}</td>
+                            <tr>
+                                <th scope='row'>{item.name}</th>
+                                <td>{item.party}</td>
+                                <td>{item.phones}</td>
+                                <td>{item.urls}</td> 
                             </tr>
                             </>
                         )
@@ -83,5 +96,6 @@ console.log('representatives', representatives)
                 </tbody>
             </table>
         </div>
-    )
+    </>
+        )
 }

@@ -22,16 +22,23 @@ function Nav() {
                             </span>
                         </Link>
                     </li>
-                    <li className="mx-2">
-                        <Link to='/'>
-                            <BsHouseDoorFill/>
-                        </Link>
-                    </li>
+                    {auth.loggedIn() ? (
                     <li className='mx-2'>
-                        <Link to='/About'>
-                            About
-                        </Link>
+                        <a href='/Dashboard'>
+                            Dashboard
+                        </a>
                     </li>
+                ) : (
+                    <>
+
+                        <li className='mx-2'>
+                            <Link to='/'>
+                                <BsHouseDoorFill/>
+                            </Link>
+                        </li>
+                        
+                    </>
+                )}
 
                 {auth.loggedIn() ? (
                     <li className='mx-2'>
@@ -53,6 +60,18 @@ function Nav() {
                         </li>
                     </>
                 )}
+
+                    <li className='mx-2'>
+                        <Link to='/About'>
+                            About
+                        </Link>
+                    </li>
+
+                    <li className='mx-2'>
+                        <Link to='/Contact'>
+                            Contact
+                        </Link>
+                    </li>
 
                     <li className='mx-2'>
                         <a href="#footer">

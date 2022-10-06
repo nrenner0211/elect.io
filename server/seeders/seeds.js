@@ -3,6 +3,7 @@ const faker = require('faker');
 const db = require('../config/connection');
 const { User } = require('../models');
 
+//populate the db with 50 users of varying usernames,emails, and passwords
 db.once('open', async () => {
   await User.deleteMany({});
 

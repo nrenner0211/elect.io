@@ -31,3 +31,15 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_ADDRESS = gql`
+
+  mutation($address: String!) {
+    addAddress(address: $address) {
+      _id
+      email
+      address
+
+    }
+  }
+`;

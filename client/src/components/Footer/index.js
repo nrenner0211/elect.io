@@ -1,24 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { experimentalStyled as styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import nRenn from '../../assets/avatars/nikiavatar.jpg';
 
-// components
-
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
 
 function Footer () {
 
     return(
 
-        <section>
+        <Container className="center" maxWidth="xlg">
             <h1 id='footer' className='intro'>More</h1>
             <section className='center'>
                 <ul className='flex-column'> 
@@ -32,8 +23,25 @@ function Footer () {
                         <Link to="/Contact">Contact Us</Link>
                     </li>
                 </ul>
+
+
+                <ul className='flex-row'> 
+                    <li className="avatar">
+                        <Avatar alt="Nicolette Renner" src={nRenn} sx={{ width: "6rem", height: "6rem" }} />
+                        <a href="https://www.linkedin.com/in/nicolette-renner/">LinkedIn</a>
+                    </li>
+                    <li className="avatar">
+                        <Avatar sx={{ width: "6rem", height: "6rem" }}>JH</Avatar>
+                        <a href="https://github.com/Pickaxe9999">GitHub</a>
+                    </li>
+                    <li className="avatar">
+                        <Avatar sx={{ width: "6rem", height: "6rem" }}>DW</Avatar>
+                        <a href="https://github.com/Davon95">GitHub</a>
+                    </li>
+                </ul>
+
             </section>
-        </section>
+        </Container>
 
     )
 }

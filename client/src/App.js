@@ -18,6 +18,8 @@ import Paper from '@mui/material/Paper';
 
 // pages
 import About from './pages/About';
+import Contact from './pages/Contact';
+import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -61,6 +63,8 @@ function App() {
 
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/dashboard' element={<Dashboard />} />
+              <Route path='/contact' element={<Contact />} />
               <Route path='/about' element={<About />} />
               <Route path='/login' element={<Login />} />
               <Route path='/signup' element={<Signup />} />

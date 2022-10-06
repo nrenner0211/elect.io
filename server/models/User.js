@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
+//User schema setup for mongo DB
 const userSchema = new Schema(
   {
     username: {
@@ -14,6 +15,11 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       match: [/.+@.+\..+/, 'Must match an email address!']
+    },
+    address: {
+      type: Schema.Types.String,
+      required: false,
+      unique: false
     },
     password: {
       type: String,
@@ -43,10 +49,7 @@ userSchema.methods.isCorrectPassword = async function(password) {
   return bcrypt.compare(password, this.password);
 };
 
-userSchema.virtual('friendCount').get(function() {
-  return this.friends.length;
-});
-
+//Declare the model for User based on the schema provided
 const User = model('User', userSchema);
 
 module.exports = User;
