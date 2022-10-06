@@ -34,34 +34,34 @@ function Contact() {
   };
 
   return (
-    
-      <Paper elevation={6}>
-        <form id="contact-form" onSubmit={handleSubmit}>
-          <div className='intro'>Contact Us</div>
 
-            <div>
-            <label htmlFor="name"></label>
-            <input type="text" placeholder="Name" name="name" defaultValue={name} onBlur={handleChange} />
-            </div>
+    <Paper elevation={6}>
+      <form id="contact-form" onSubmit={handleSubmit}>
+        <div className='intro'>Contact Us</div>
 
-            <div>
-            <label htmlFor="email"></label>
-            <input type="email" placeholder="Email" name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
+        <div>
+          <label htmlFor="name"></label>
+          <input type="text" placeholder="Name" name="name" defaultValue={name} onBlur={handleChange} />
+        </div>
 
-            <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="5" placeholder="Feedback Welcome!" defaultValue={message} onBlur={handleChange} />
-            </div>
+        <div>
+          <label htmlFor="email"></label>
+          <input type="email" placeholder="Email" name="email" defaultValue={email} onBlur={handleChange} />
+        </div>
 
-            {errorMessage && (
-            <div>
-                <p className="error-text">{errorMessage}</p>
-            </div>
-            )}
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea name="message" rows="5" placeholder="Feedback Welcome!" defaultValue={message} onBlur={handleChange} />
+        </div>
 
-            <button data-testid="button" type="submit">Submit</button>
-        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+
+        <button data-testid="button" type="submit">Submit</button>
+      </form>
     </Paper>
   );
 }

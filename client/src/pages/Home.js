@@ -15,31 +15,31 @@ const Home = () => {
         <Container className="center" maxWidth="xlg">
             <h1 className="intro">Home</h1>
 
-            
 
-                    <h4>Enter Address:</h4>
 
-                    {/* textfield component is loaded with label and such */}
+            <h4>Enter Address</h4>
 
-                    <TextField className='userInput' id="outlined-basic" label="Address" variant="outlined" />
+            {/* textfield component is loaded with label and such */}
 
-                    <h5>Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a></h5>
+            <TextField className='userInput' id="outlined-basic" label="Address" variant="outlined" />
 
-        
-                <Box sx={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        '& > :not(style)': {
-                        m: 'auto',
-                        p: '3rem'
-                        },
-                    }}
-                >
-                    <Paper elevation={6}>
-                        <RepList></RepList>
-                    </Paper>
+            <h5>Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a></h5>
 
-                </Box>
+
+            <Box sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                '& > :not(style)': {
+                    m: 'auto',
+                    p: '3rem'
+                },
+            }}
+            >
+                <Paper elevation={6}>
+                    <RepList></RepList>
+                </Paper>
+
+            </Box>
 
         </Container>
     )
