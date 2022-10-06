@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const secret='secret';
 const expiration = '2h';
 
+//authentication middleware for creating JWT's and verifying them
 module.exports = {
     signToken: function({username, email, _id}){
         const payload = {username, email, _id};

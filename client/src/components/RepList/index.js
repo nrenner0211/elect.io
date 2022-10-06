@@ -37,9 +37,7 @@ export const RepList = () => {
                         officials: response.data.officials
                     }
                 })
-
-                //console.log(repData[0])
-
+                console.log('repData', repData)
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
@@ -66,7 +64,7 @@ return (
     
         <form className="addressForm center">
             <TextField className='userInput' id="outlined-basic" label="Address" variant="outlined"/>
-            <button className="btn" type="submit" onClick={(event) => {
+            <button className="btn" type="submit" onSubmit={(event) => {
                 event.preventDefault();
                 console.log(document.getElementById('outlined-basic').value);
                 setWatchList(document.getElementById('outlined-basic').value)
