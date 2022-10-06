@@ -7,22 +7,25 @@ import Paper from '@mui/material/Paper';
 // utils
 import { ADD_ADDRESS } from '../utils/mutations';
 
+
 const Dashboard = () => {
 
     const [addAddress, { error }] = useMutation(ADD_ADDRESS);
+
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
             
+
           const mutationResponse = await addAddress({
             variables: {address: document.getElementById('address').value}
           });
 
-          console.log(mutationResponse.data.addAddress);
           
         } catch (e) {
           console.log(e);
+
         }
       };
 
@@ -47,6 +50,7 @@ const Dashboard = () => {
                     <Paper elevation={6}>
                         <div className="subtitle"> Edit Information
                             <form className="edit-form" onSubmit={handleFormSubmit}>
+
 
                                 <label htmlFor="address"></label>
                                 <input type="text" id="address" placeholder="Address" name="address"
