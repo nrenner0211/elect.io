@@ -30,13 +30,15 @@ export const RepList = () => {
                     })
                 }))
                 
-                // console.log(responses)
+                //console.log(responses)
                 const repData = responses.map((response) => {
                 return  {
                         officials: response.data.officials
                     }
                 })
-                console.log('repData', repData)
+
+                //console.log(repData[0])
+
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
@@ -51,37 +53,35 @@ export const RepList = () => {
         return () => (isMounted = false)
     }, [watchList]) 
 
-// testing data chain
-console.log('representatives', representatives)
 
+return (
+    <div>
+        <table className='table'>
+            <thead style={{ color: '#004FFF'}}>
+                <tr>
+                    <th scope='col'>Name</th>
+                    <th scope='col'>Party</th>
+                    <th scope='col'>Phone</th>
+                    <th scope='col'>Website</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {representatives.map((item) => {
+                    return ( 
+                        <>                  
+                        <tr>
+                            <th scope='row'>{item.name}</th>
+                            <td>{item.party}</td>
+                            <td>{item.phones}</td>
+                            <td>{item.urls}</td> 
+                        </tr>
+                        </>
+                    )
+                })}
+            </tbody>
+        </table>
+    </div>
 
-    return (
-        <div>
-            <table className='table'>
-                <thead style={{ color: '#004FFF'}}>
-                    <tr>
-                        <th scope='col'>Name</th>
-                        <th scope='col'>Party</th>
-                        <th scope='col'>Phone</th>
-                        <th scope='col'>Website</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    {representatives.map((items) => {
-                        return ( 
-                            <>                  
-                            <tr key={items.name}>
-                                <th scope='row'>{items.name}</th>
-                                <td>{items.party}</td>
-                                <td>{items.phones}</td>
-                                <td>{items.urls}</td>
-                            </tr>
-                            </>
-                        )
-                    })}
-                </tbody>
-            </table>
-        </div>
     )
 }
