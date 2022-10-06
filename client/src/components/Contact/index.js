@@ -33,9 +33,9 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className='center-forum'>
 
-    <h1 id="contact" className='intro'>Contact</h1>
+    <h3 id="contact" className='intro contact'>Contact Us!</h3>
     <div className='center'>
 
         <form id="contact-form" onSubmit={handleSubmit}>

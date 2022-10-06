@@ -81,6 +81,11 @@ p {
   font-size: 1.3rem;
 }
 
+ol {
+  padding: 0 0 0 27px;
+  font-size: 2vh;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -128,6 +133,10 @@ input {
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+.to-do {
+  display: flex;
 }
 
 ul{
@@ -217,33 +226,6 @@ textarea {
   transition: .2s;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.subtitle {
-  color: #c9cfcb;
-}
-
-/* .transition {
-  font-size: 2vh;
-}
-
-.transition:hover {
-  background-color: var(--onyx);
-  transform: scale(1.5);
-  transition: 1s;
-} */
-
-.favicon {
-  cursor: pointer;
-  padding: 2vh 0vh 0vh 2vh;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -289,13 +271,43 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.subtitle {
+  color: #c9cfcb;
+}
+
+/* .transition {
+  font-size: 2vh;
+}
+
+.transition:hover {
+  background-color: var(--onyx);
+  transform: scale(1.5);
+  transition: 1s;
+} */
+
+.favicon {
+  cursor: pointer;
+  padding: 2vh 0vh 0vh 2vh;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+ 
 .card {
   padding: 3vh;
   width: 50vh;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40vh;
 }
 
 .cardTitle {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roborto', sans-serif;
   padding: 10px;
   font-size: 3vh;
   cursor: pointer;
@@ -310,16 +322,19 @@ textarea {
 
 .intro {
   font-size: 7vh;
-  padding: 30px 30px 15px 30px;
-  border-bottom: solid 2px var(--onyx);
-  margin: 0 auto 100px auto;
+  padding: 15px 30px 15px 30px;
+  margin: 50px auto 50px auto;
   width: 50%;
-  cursor: pointer;
   text-align: center;
 }
 
+.what-to-do {
+  margin: 50px 0px 50px 0px;
+  width: 43%;
+}
+
 .body-text {
-  margin: 0;
+  margin: auto;
 }
 
 .border-bg {
@@ -328,11 +343,11 @@ textarea {
   background-color: #CF1259;
 }
 
-.intro:hover {
+/* .intro:hover {
   color: var(--electricBlue);
   border-bottom: solid 2px var(--electricBlue);
   transition: .3s;
-}
+} */
 
 .isRounded {
   border-radius: 50%;
@@ -351,5 +366,7 @@ textarea {
   align-content: center;
 }
 
-
+.li-width {
+  width: 80%;
+}
 
