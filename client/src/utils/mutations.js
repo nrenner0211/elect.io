@@ -32,21 +32,12 @@ export const ADD_USER = gql`
   }
 `;
 
-export const EDIT_USER = gql`
-  mutation editUser(
-    $username: String!
-    $email: String!
-    $password: String!
-  ) {
-    editUser(
-      username: $username
-      email: $email
-      password: $password
-    ) {
-      token
-      user {
-        _id
-      }
+export const ADD_ADDRESS = gql`
+  mutation($address: String!) {
+    addAddress(address: $address) {
+      _id
+      email
+      address
     }
   }
 `;

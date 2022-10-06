@@ -5,35 +5,25 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper';
 
 // utils
-import { EDIT_USER } from '../utils/mutations';
-import Auth from '../utils/auth';
+import { ADD_ADDRESS } from '../utils/mutations';
 
 const Dashboard = () => {
 
-    const [formState, setFormState] = useState({ username: '',  email: '', password: '', address: '' });
-    const [edit, { error }] = useMutation(EDIT_USER);
+    const [addAddress, { error }] = useMutation(ADD_ADDRESS);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
             
-          const mutationResponse = await edit({
-            variables: { username: formState.username, email: formState.email, password: formState.password, address: formState.address },
+          const mutationResponse = await addAddress({
+            variables: {address: document.getElementById('address').value}
           });
-          const token = mutationResponse.data.edit.token;
-          Auth.login(token);
+
+          console.log(mutationResponse.data.addAddress);
           
         } catch (e) {
           console.log(e);
         }
-      };
-    
-      const handleChange = (event) => {
-        const { user, value } = event.target;
-        setFormState({
-          ...formState,
-          [user]: value,
-        });
       };
 
     return (
@@ -58,21 +48,10 @@ const Dashboard = () => {
                         <div className="subtitle"> Edit Information
                             <form className="edit-form" onSubmit={handleFormSubmit}>
 
-                                <label htmlFor="username"></label>
-                                <input type="text" id="username" placeholder="Username" name="username"
-                                onChange={handleChange}></input>
-
-                                <label htmlFor="email"></label>
-                                <input type="text" id="email" placeholder="Email" name="email"
-                                onChange={handleChange}></input>
-
-                                <label htmlFor="password"></label>
-                                <input type="text" id="password" placeholder="Password" name="password"
-                                onChange={handleChange}></input>
-
                                 <label htmlFor="address"></label>
                                 <input type="text" id="address" placeholder="Address" name="address"
-                                onChange={handleChange}></input>
+                                ></input>
+                                
 
                                 <label htmlFor="submitEditForm"></label>
                                 <button id="submit">Submit</button>
