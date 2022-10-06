@@ -5,24 +5,22 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper';
 
 // utils
-import { EDIT_USER } from '../utils/mutations';
-import Auth from '../utils/auth';
+import { ADD_ADDRESS } from '../utils/mutations';
+
 
 const Dashboard = () => {
 
-    const [formState, setFormState] = useState({ username: '',  email: '', password: '', address: '' });
-    const edit = useMutation(EDIT_USER);
+    const [formState, setFormState] = useState({ address: '' });
+    const addAddress = useMutation(ADD_ADDRESS);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
             
-          const mutationResponse = await edit({
-            variables: { username: formState.username, email: formState.email, password: formState.password, address: formState.address },
+          const mutationResponse = await ADD_ADDRESS({
+            variables: { address: formState.address },
           });
-          const token = mutationResponse.data.edit.token;
-          Auth.login(token);
-          
+
         } catch (error) {
           console.log(error);
         }
