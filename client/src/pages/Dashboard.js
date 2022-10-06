@@ -11,7 +11,7 @@ import Auth from '../utils/auth';
 const Dashboard = () => {
 
     const [formState, setFormState] = useState({ username: '',  email: '', password: '', address: '' });
-    const [edit, { error }] = useMutation(EDIT_USER);
+    const edit = useMutation(EDIT_USER);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -23,8 +23,8 @@ const Dashboard = () => {
           const token = mutationResponse.data.edit.token;
           Auth.login(token);
           
-        } catch (e) {
-          console.log(e);
+        } catch (error) {
+          console.log(error);
         }
       };
     
@@ -58,7 +58,7 @@ const Dashboard = () => {
                         <div className="subtitle"> Edit Information
                             <form className="edit-form" onSubmit={handleFormSubmit}>
 
-                                <label htmlFor="username"></label>
+                                {/* <label htmlFor="username"></label>
                                 <input type="text" id="username" placeholder="Username" name="username"
                                 onChange={handleChange}></input>
 
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
                                 <label htmlFor="password"></label>
                                 <input type="text" id="password" placeholder="Password" name="password"
-                                onChange={handleChange}></input>
+                                onChange={handleChange}></input> */}
 
                                 <label htmlFor="address"></label>
                                 <input type="text" id="address" placeholder="Address" name="address"

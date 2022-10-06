@@ -8,7 +8,7 @@ const About = () => {
 
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="md">
+            <Container maxWidth="xlg">
 
                 <h1 id='about' className='intro'>About</h1>
 

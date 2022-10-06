@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import { Container } from "@mui/material";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -33,6 +34,7 @@ function Signup(props) {
   };
 
   return (
+    <Container className="center" maxWidth="xlg">
     <div className="container my-1">
       <Link to="/login">← Go to Login</Link>
 
@@ -74,6 +76,7 @@ function Signup(props) {
         </div>
       </form>
     </div>
+    </Container>
   );
 }
 
