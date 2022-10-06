@@ -31,6 +31,7 @@ export const RepList = () => {
                 }))
                 
                 // console.log(responses)
+
                 const repData = responses.map((response) => {
                 return  {
                         officials: response.data.officials
@@ -39,6 +40,8 @@ export const RepList = () => {
                 console.log('repData', repData)
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
+
+               
                 }
                 
                 
@@ -49,6 +52,7 @@ export const RepList = () => {
         fetchdata()
 
         return () => (isMounted = false)
+
     }, [watchList]) 
 
 // testing data chain
@@ -84,4 +88,31 @@ console.log('representatives', representatives)
             </table>
         </div>
     )
+
+    }, [])
+    return <div>
+        <table className='table'>
+            <thead style={{ color: '#004FFF'}}>
+                <tr>
+                    <th scope='col'>Name</th>
+                    <th scope='col'>Party</th>
+                    <th scope='col'>Phone</th>
+                    <th scope='col'>Website</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {address.map((data) => {
+                    return (                    
+                    <tr key={data.offices}>
+                        <th scope='row'>{data.name}</th>
+                        <td>{data.party}</td>
+                        <td>{data.phones}</td>
+                        <td>{data.urls}</td> 
+                    </tr>
+                    )
+                })}
+            </tbody>
+        </table>
+    </div>
 }
