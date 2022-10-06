@@ -32,7 +32,7 @@ export const ADD_USER = gql`
   }
 `;
 
-export const EDIT_USER = gql`
+export const ADD_ADDRESS = gql`
   mutation editUser(
     $username: String!
     $email: String!

@@ -39,12 +39,6 @@ function Nav() {
                         
                     </>
                 )}
-                    <li className='mx-2'>
-                        <Link to='/About'>
-                            About
-                        </Link>
-                    </li>
-
 
                 {auth.loggedIn() ? (
                     <li className='mx-2'>
@@ -66,6 +60,18 @@ function Nav() {
                         </li>
                     </>
                 )}
+
+                    <li className='mx-2'>
+                        <Link to='/About'>
+                            About
+                        </Link>
+                    </li>
+
+                    <li className='mx-2'>
+                        <Link to='/Contact'>
+                            Contact
+                        </Link>
+                    </li>
 
                     <li className='mx-2'>
                         <a href="#footer">
