@@ -30,16 +30,16 @@ export const RepList = () => {
                     })
                 }))
                 
-                // console.log(responses)
+                //console.log(responses)
                 const repData = responses.map((response) => {
                 return  {
                         data: response.data.offices,
                         officials: response.data.officials
                     }
                 })
-                // console.log(data)
+                //console.log(repData[0])
                 if (isMounted) {
-                    setRepresentatives(repData)
+                    setRepresentatives(repData[0].officials)
                 }
                 
                 
@@ -51,8 +51,6 @@ export const RepList = () => {
 
         return () => (isMounted = false)
     }, [watchList]) 
-
-console.log('representatives', representatives)
 
 return (
     <div>
@@ -70,10 +68,10 @@ return (
                 {representatives.map((item) => {
                     return ( 
                         <>                  
-                        <tr key={item.name}>
+                        <tr>
                             <th scope='row'>{item.name}</th>
-                            <td>{item.officials.party}</td>
-                            <td>{item.officials.phones}</td>
+                            <td>{item.party}</td>
+                            <td>{item.phones}</td>
                             <td>{item.urls}</td> 
                         </tr>
                         </>

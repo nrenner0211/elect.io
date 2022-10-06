@@ -46,6 +46,20 @@ const resolvers = {
 
             const token = signToken(user);
             return {token, user};
+        },
+         
+        addAddress: async(parent, {address}, context) => {
+            if(context.user){
+                const updatedUser = await User.findOneAndUpdate(
+                    {_id: context.user._id},
+                    {$set: {address: address}},
+                    { new: true }
+                ).populate('address')
+
+                return updatedUser;
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
         }
     }
 }
