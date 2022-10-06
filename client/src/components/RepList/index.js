@@ -2,19 +2,20 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import civicInfo from '../../api/civicInfo';
 import TextField from '@mui/material/TextField';
-
-// mock data
-// const mockData = require('../../api/data.json');
+import auth from '../../utils/auth';
 
 
 export const RepList = () => {
+
+    let userAddress = '';
+    if(auth.loggedIn())
+    {
+        userAddress = auth.getProfile();
+        userAddress = userAddress.data.address;
+    }
+
     const [representatives, setRepresentatives] = useState([])
-    const [watchList, setWatchList] = useState(['131 Riverview AVE, Wheeling WV 26003'])
-
-    // MOCKDATA
-    // let representatives = mockData.officials;
-
-
+    const [watchList, setWatchList] = useState([userAddress]);
 
 
     // API CALL
@@ -30,14 +31,12 @@ export const RepList = () => {
                         }
                     })
                 }))
-                
-                // console.log(responses)
+
                 const repData = responses.map((response) => {
                 return  {
                         officials: response.data.officials
                     }
                 })
-                console.log('repData', repData)
                 if (isMounted) {
                     setRepresentatives(repData[0].officials)
                 }
@@ -51,9 +50,6 @@ export const RepList = () => {
 
         return () => (isMounted = false)
     }, [watchList]) 
-
-// testing data chain
-console.log('representatives', representatives)
 
 
 return (

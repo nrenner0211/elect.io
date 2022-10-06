@@ -35,7 +35,6 @@ const resolvers = {
 
         login: async(parent, {email, password}) => {
             const user = await User.findOne({email});
-            console.log(user)
             if(!user){
                 throw new AuthenticationError('Incorrect credentials!');
             }
@@ -52,6 +51,7 @@ const resolvers = {
          
         addAddress: async(parent, {address}, context) => {
             if(context.user){
+                console.log(address);
                 const updatedUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
                     {$set: {address: address}},
