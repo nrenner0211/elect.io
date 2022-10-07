@@ -8,7 +8,7 @@ const {typeDefs, resolvers} = require('./schema');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
-const server = new ApolloServer({typeDefs, resolvers, context: authMiddleware})
+const server = new ApolloServer({typeDefs, resolvers, cache: 'bounded', context: authMiddleware})
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
