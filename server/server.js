@@ -1,8 +1,9 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const {typeDefs, resolvers} = require('./schema');
 const {authMiddleware} = require('./utils/auth');
+const {typeDefs, resolvers} = require('./schema');
+
 
 const db = require('./config/connection');
 
@@ -13,6 +14,14 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+//deliver the home page as link base route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+})
 
 //start the back end apollo server
 
@@ -21,14 +30,14 @@ const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({app});
 
-  if(process.env.NODE_ENV === 'production'){
-    app.use(express.static(path.join(__dirname, '../client/build')));
-  }
+  // if(process.env.NODE_ENV === 'production'){
+  //   app.use(express.static(path.join(__dirname, '../client/build')));
+  // }
 
-  //deliver the home page as link base route
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-  })
+  // //deliver the home page as link base route
+  // app.get('/', (req, res) => {
+  //   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  // })
 
   //confirm server is open
   db.once('open', () => {
