@@ -14,14 +14,25 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-if(process.env.NODE_ENV === 'production'){
-  app.use(express.static(path.join(__dirname, '../client/build')));
+// TEST
+
+if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+  });
 }
 
-//deliver the home page as link base route
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-})
+
+
+// if(process.env.NODE_ENV === 'production'){
+//   app.use(express.static(path.join(__dirname, '../client/build')));
+// }
+
+// //deliver the home page as link base route
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// })
 
 //start the back end apollo server
 
