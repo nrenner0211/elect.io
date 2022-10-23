@@ -12,22 +12,18 @@ const Dashboard = () => {
 
     const [addAddress, { error }] = useMutation(ADD_ADDRESS);
 
-
     const handleFormSubmit = async (event) => {
+
         event.preventDefault();
         try {
-            
+            const mutationResponse = await addAddress({
+                variables: {address: document.getElementById('address').value}
+            });
 
-          const mutationResponse = await addAddress({
-            variables: {address: document.getElementById('address').value}
-          });
-
-          
-        } catch (e) {
-          console.log(e);
-
-        }
-      };
+            } catch (e) {
+            console.log(e);
+            }
+        };
 
     return (
 
@@ -35,9 +31,10 @@ const Dashboard = () => {
         <Container className="center" maxWidth="xlg">
             <h1 className="intro">Dashboard</h1>
 
-                    <h5>Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a></h5> 
+                    <h5>
+                        Powered by the Civic Information API, <a href='https://developers.google.com/civic-information'>Learn More</a>
+                    </h5>
 
-        
                 <Box sx={{
                         display: 'flex',
                         flexWrap: 'wrap',

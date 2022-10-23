@@ -1,16 +1,17 @@
-# project-3
+# elect.io
 
 ## Table of Contents
 
-- [project-3](#project-3)
+- [elect.io](#electio)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [Requirements](#requirements)
-  - [devNotes](#devnotes)
   - [Links](#links)
   - [Sources](#sources)
   - [Contributors](#contributors)
     - [Nicolette Renner](#nicolette-renner)
+    - [Jacob Hannah](#jacob-hannah)
+    - [Davon Webb](#davon-webb)
 
 ## About
 
@@ -38,10 +39,6 @@ This is our third and final group project! Inspired by lack of information aroun
 - Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 - BONUS: is installable
 
-## devNotes
-
-In the root of the project, run `npm run install` and `npm run develop` to get started!
-
 ## Links
 
 [Repository](https://github.com/nrenner0211/project-3)
@@ -58,10 +55,16 @@ In the root of the project, run `npm run install` and `npm run develop` to get s
 
 ## Contributors
 
-// Add name and link here
-
 ### Nicolette Renner
 
 [![Linkedin Badge](https://img.shields.io/badge/-nrenner0211-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicolette-renner/)](https://www.linkedin.com/in/nicolette-renner/)
 [![GitHub Badge](https://img.shields.io/badge/-nrenner0211-7261A3?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nrenner0211)](https://github.com/nrenner0211)
 [![Gmail Badge](https://img.shields.io/badge/-nicolette.rachelle11@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nicolette.rachelle11@gmail.com)](mailto:nicolette.rachelle11@gmail.com)
+
+### Jacob Hannah
+
+[![GitHub Badge](https://img.shields.io/badge/-Pickaxe9999-7261A3?style=flat-square&logo=Github&logoColor=white&link=https://github.com/Pickaxe9999)](https://github.com/Pickaxe9999)
+
+### Davon Webb
+
+[![GitHub Badge](https://img.shields.io/badge/-Davon95-7261A3?style=flat-square&logo=Github&logoColor=white&link=https://github.com/Davon95)](https://github.com/Davon95)
