@@ -28,6 +28,12 @@ html,
 body {
   min-height: 100%; 
   font-family: 'Nanum Gothic', sans-serif;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    text-align: center;
+  }
 }
 
 body {
@@ -37,6 +43,13 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   color: var(--onyx);
+  @media (max-width: 767px) {
+    text-align: center;
+    width: 50%;
+  }
+  @media (max-width: 400px) {
+    text-align: center;
+  }
 }
 
 h1,
@@ -287,5 +300,11 @@ th {
 .subtitle {
   font-size: 1rem;
   padding: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:500px) {
+
 }
 
